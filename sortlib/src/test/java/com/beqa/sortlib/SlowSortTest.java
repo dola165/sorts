@@ -70,7 +70,6 @@ public class SlowSortTest {
             new Person("Aaron", 19)
         };
 
-        // Sort by age first, then by name alphabetically if ages are equal
         SlowSort.BUBBLE.sort(people,
             Comparator.comparingInt(Person::age)
                       .thenComparing(Person::name)
@@ -97,3 +96,4 @@ public class SlowSortTest {
 
 
 }
+
